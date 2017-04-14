@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Фотограф Даниль Сабиржанов</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+      </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a class="active" href="/">Портфолио</a></li>
+          <li><a href="about.html">Обо мне</a></li>
+          <li><a href="price.html">Цены</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span> Заявка </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!--modal-content-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Заявка на фотосессию</h4>
+        </div>
+        <div class="modal-body">
+          <form action="send.php" method="post" name="form">
+            <div class="form-group">
+              <label for="userName">ФИО:</label>
+              <input type="text" class="form-control" id="userName" name="userName" placeholder="Укажите Ваше имя">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Укажите Ваш номер телефона" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Адрес электронной почты:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Укажите e-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение (дополнительная информация):</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Введите текст сообщения"></textarea>
+            </div>
+            <p>Поля для ввода номера телефона и электронной почты являются обязательными для заполнения</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Отправить</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid bg-3 text-left">
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <h1 class='pname'>Danil Sabirzhanov</h1>
+        <h4>photographer</h4>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/2.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/3.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/4.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="img/6.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/7.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/8.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/10.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/11.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/12.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/13.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/14.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/15.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/16.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/17.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/18.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/19.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/20.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/21.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/22.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/23.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/24.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/25.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/26.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/27.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/28.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/9.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/30.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="img/29.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/33.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/34.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+    <div class="col-sm-3">
+      <img src="img/35.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+    </div>
+  </div>
+  </div><br><br>
+
+
+<form action="handler.php" method="post">
+<input type="text" name="fio" placeholder="Укажите ФИО" required>
+<input type="text" name="email" placeholder="Укажите e-mail" required>
+<input type="submit" value="Отправить">
+</form>
+
+
+
+
+  <footer class="container-fluid text-center">
+    <p class='pname'>&copy; Dementiev Ilya</p>
+  </footer>
+
+  <script>
+    $(function () {
+      $("#phone").mask("+7(999) 999-9999");
+    });
+  </script>
+
+</body>
+
+</html>

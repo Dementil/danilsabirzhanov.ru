@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> О себе</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <a class="navbar-brand active pname" href="/">Danil Sabirzhanov</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Портфолио</a></li>
+          <li><a href="about.html" class="active">Обо мне</a></li>
+          <li><a href="price.html">Цены</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span> Заявка </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--modal-content-->
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Заявка на фотосессию</h4>
+        </div>
+        <div class="modal-body">
+          <form action="send.php" method="post">
+            <div class="form-group">
+              <label for="userName">ФИО:</label>
+              <input type="text" class="form-control" id="userName" name="userName" placeholder="Укажите Ваше имя">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон:</label>
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Укажите Ваш номер телефона" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Адрес электронной почты:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Укажите e-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение (дополнительная информация)</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Введите текст сообщения"></textarea>
+            </div>
+            <p>Поля для ввода номера телефона и электронной почты являются обязательными для заполнения</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Отправить</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+<!--modal-content end-->
+
+  <div class="container text-center">
+    <h3 class="pname">Рад приветствовать вас на своем сайте</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="img/logo2.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'> <br>
+
+        <img src="img/logo4.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="well text-justify">
+          <p>Я – фотограф Даниль Сабиржанов, и для меня фотография – это искусство, с помощью которого можно не просто запечатлеть
+            момент, но и рассказать о Ваших событиях, чувствах или же целую историю жизни. Каждая сделанная мной фотография
+            несет в себе настроение и дух момента,позволяя на долгие годы запомнить те чувства и эмоции, которые были пережиты
+            Вами в самые важные минуты жизни. Живу и работаю в г. Выборг, но всегда готов посетить Санкт-Петербург с целью
+            провести для вас фотосессию.</p>
+          <p>В своих работах я выкладываюсь на 100% и всегда готов помочь в поиске интересных идей для съемки. Каждая сделанная
+            мной фотография несет в себе настроение и дух момента,позволяя на долгие годы запомнить те чувства и эмоции,
+            которые были пережиты Вами в самые важные минуты жизни.</p>
+          <p>Использование только качественной и профессиональной фототехники, многолетний опыт съемки свадебных и других фотографий,
+            любовь к своей профессии – благодаря этому каждый клиент получает качественные снимки, наполненные яркими красками,
+            чувствами и духом пережитого момента.</p>
+        </div>
+        <h3 class="pname">Контакты:</h3><br>
+        <div class="well">
+          <img src="img/contact.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <img src="img/logo.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'> <br>
+        <img src="img/logo5.jpg" class="img-responsive" style="width:100%" alt="Image" tabindex='0'>
+      </div>
+    </div>
+  </div><br>
+
+
+
+
+
+  <footer class="container-fluid text-center">
+    <p class='pname'>&copy; Dementiev Ilya</p>
+  </footer>
+
+  <script>
+    $(function () {
+      $("#phone").mask("+7(999) 999-9999");
+    });
+  </script>
+</body>
+
+</html>

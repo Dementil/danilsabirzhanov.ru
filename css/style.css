@@ -1,0 +1,42 @@
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Add a gray background color and some padding to the footer */
+    
+    footer {
+      background-color: #101010;
+      padding: 25px;
+      color: #9d9d9d;
+    }
+    
+    .pname {
+      font-family: 'Yesteryear', cursive;
+    }
+    
+    img[tabindex='0'] {
+      cursor: zoom-in;
+    }
+    
+    img[tabindex='0']:focus {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: auto;
+      height: auto;
+      max-width: 50%;
+      margin: auto;
+      box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(59, 59, 59, .4);
+    }
+    
+    img[tabindex='0']:focus,
+    img[tabindex='0']:focus~* {
+      pointer-events: none;
+    }
+    
+    .navbar {
+      font-family: 'Marck Script', cursive;
+    }
